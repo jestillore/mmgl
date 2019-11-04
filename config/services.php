@@ -30,4 +30,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'gitlab' => [
+        'client_id' => env('GITLAB_KEY'),
+        'client_secret' => env('GITLAB_SECRET'),
+        'redirect' => env('GITLAB_REDIRECT_URI'),
+        'instance_uri' => env('GITLAB_INSTANCE_URI'),
+    ],
+
 ];
